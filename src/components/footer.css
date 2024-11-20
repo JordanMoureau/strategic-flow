@@ -1,0 +1,118 @@
+footer {
+  width: 100%;
+  border-top: 10px solid #c4061b;
+}
+
+.footer-main {
+  background-color: #eaeaea;
+  width: 94%;
+  padding: 50px 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-column {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-column img {
+  width: 75px;
+  height: 75px;
+  padding-right: 20px;
+}
+
+h2 {
+  font-family: "AlienEncounters";
+  font-weight: 100;
+  font-size: 2rem;
+  width: 10%;
+  line-height: 1;
+}
+
+.copyright {
+  font-family: "AlienEncounters";
+  width: 98%;
+  text-align: right;
+  color: #cfd1cb;
+  padding: 1%;
+}
+
+.details-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.details-column h3 {
+  font-family: "RalewayBold";
+  font-size: 1.1rem;
+}
+
+.details-column h4 {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.details-column p {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  margin-top: 10px; /* Space above icons */
+}
+
+.social-icons a {
+  color: #333; /* Change color to match your brand */
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c4061b; /* Hover color (customize as needed) */
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: end;
+    text-align: right;
+  }
+
+  .logo-column,
+  .details-column {
+    width: 100%;
+    margin-bottom: 20px; /* Add space between sections */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-column img {
+    width: 50px; /* Smaller logo for mobile */
+    height: 50px;
+    padding-right: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Reduce font size for mobile */
+  }
+
+  .details-column h3,
+  .details-column h4 {
+    font-size: 1rem; /* Smaller font for smaller screens */
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; /* Smaller icons on very small screens */
+  }
+
+  .copyright {
+    font-size: 0.9rem; /* Smaller text on mobile */
+  }
+}

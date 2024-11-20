@@ -1,0 +1,41 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transform: translateX(100%); /* Start off-screen */
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-links li {
+  margin: 20px 0;
+}
+
+.mobile-nav-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+.cta-button-mobile {
+  margin-top: 20px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

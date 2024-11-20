@@ -1,0 +1,83 @@
+.events-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.bounder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover; /* Ensures the video covers the entire viewport */
+  z-index: -100; /* Places the video behind other content */
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: -110px;
+}
+
+.events-page::before {
+  margin-top: -110px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity for the desired effect */
+  z-index: -1; /* Place behind content but in front of the video */
+}
+
+.content-overlay {
+  padding-top: 20vh;
+  position: relative;
+  z-index: 1; /* Positions content above the video */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 50vh;
+  color: #fff;
+  text-align: center;
+  width: 95%;
+  max-width: 500px;
+}
+
+.content-overlay h1 {
+  font-size: 4.1rem;
+}
+
+.main-events {
+  width: 80%;
+  max-width: 900px;
+  margin: 0rem 10px 8rem 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-events h2 {
+  font-family: "RalewayBold";
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .content-overlay h1 {
+    font-size: 3.3rem;
+  }
+}

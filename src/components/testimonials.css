@@ -1,0 +1,26 @@
+.testimonials {
+  width: 90%;
+  margin: 8rem 2%;
+  background-color: #eaeaea;
+  border-top: 10px solid #c4061b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  width: 80%;
+  max-width: 900px;
+  padding: 4rem 3%;
+}
+
+.quote h3 {
+  font-size: 1.3rem;
+  font-family: "RalewayBold";
+}
+
+.quote p {
+  font-family: "Raleway";
+  font-weight: 100;
+}

@@ -1,0 +1,68 @@
+.signs-you-need {
+  background-color: #f4f4f4; /* Light background */
+  padding: 2rem;
+  text-align: center;
+  margin: 8rem 0px;
+}
+
+.signs-you-need h2 {
+  width: 100%;
+  font-size: 2rem;
+  font-family: "RalewayBold";
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.card button {
+  background-color: #c4061b;
+  color: #fff;
+  font-family: "RalewayBold";
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #a10418;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

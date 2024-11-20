@@ -1,0 +1,137 @@
+/* Base navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar .logo img {
+  width: 70px;
+  margin: 0px 10px;
+}
+
+.navbar h2 {
+  width: fit-content;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: 0.8rem;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  text-align: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "RalewayBold";
+  text-transform: uppercase;
+}
+
+.cta-button-navbar {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-navbar:hover {
+  opacity: 0.8;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .navbar .logo img {
+    width: 61px;
+  }
+
+  .navbar h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    list-style: none;
+    padding: 1rem 0;
+  }
+
+  .nav-links-mobile li {
+    padding: 10px 0;
+  }
+  .cta-button-navbar {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    z-index: 1000;
+    position: absolute; /* Positioned relative to the navbar */
+    top: 2rem; /* Adjust the position as needed */
+    right: 1.5rem; /* Align it to the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: block;
+    font-size: 1.8rem;
+    color: inherit;
+  }
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navbar .logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.5rem;
+  }
+
+  .navbar .logo img {
+    width: 50px;
+    margin: 0px 10px;
+  }
+
+  .navbar h2 {
+    width: fit-content;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,100 @@
+.hero {
+  background-image: url("../media/homeherobackground.png");
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 10rem 0px;
+}
+
+.hero-heading h1 {
+  width: 70%;
+  text-align: center;
+  max-width: 900px;
+  padding-bottom: 1rem;
+}
+
+.hero-heading p {
+  line-height: 1.5;
+  width: 40%;
+  text-align: center;
+  max-width: 700px;
+  font-family: "RalewayBold";
+  font-size: 1.1rem;
+}
+
+.hero-heading button {
+  margin-top: 3rem;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-family: "RalewayBold";
+  border-radius: 17px;
+  border: none;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-heading button:hover {
+  background-color: white;
+}
+
+.home-section-one {
+  margin: 8rem 2% 3rem 2%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section-one h2 {
+  width: 100%;
+  font-family: "RalewayBold";
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.col-one {
+  width: 50%;
+}
+
+.col-two {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .hero-heading h1 {
+    width: 95%;
+  }
+  .hero-heading p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-heading h1 {
+    font-size: 2.5rem;
+  }
+  .hero-heading p {
+    width: 85%;
+    font-size: 1rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col-one {
+    width: 100%;
+  }
+
+  .col-two {
+    width: 100%;
+  }
+}
