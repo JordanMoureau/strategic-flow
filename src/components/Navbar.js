@@ -64,9 +64,6 @@ function Navbar({
       <MobileNav
         isOpen={isMobileMenuOpen}
         toggleMobileMenu={toggleMobileMenu}
-        textColor={textColor}
-        buttonBgColor={buttonBgColor}
-        buttonTextColor={buttonTextColor}
       />
     </nav>
   );

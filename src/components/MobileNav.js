@@ -3,13 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./mobilenav.css";
 
-function MobileNav({
-  isOpen,
-  toggleMobileMenu,
-  textColor,
-  buttonBgColor,
-  buttonTextColor,
-}) {
+function MobileNav({ isOpen, toggleMobileMenu }) {
   const menuVariants = {
     open: { x: 0 },
     closed: { x: "100%" },
@@ -25,46 +19,27 @@ function MobileNav({
     >
       <ul className="mobile-nav-links">
         <li>
-          <Link to="/" onClick={toggleMobileMenu} style={{ color: textColor }}>
+          <Link to="/" onClick={toggleMobileMenu}>
             Home
           </Link>
         </li>
         <li>
-          <Link
-            to="/events"
-            onClick={toggleMobileMenu}
-            style={{ color: textColor }}
-          >
+          <Link to="/events" onClick={toggleMobileMenu}>
             Events
           </Link>
         </li>
         <li>
-          <Link
-            to="/aboutstrategic"
-            onClick={toggleMobileMenu}
-            style={{ color: textColor }}
-          >
+          <Link to="/aboutstrategic" onClick={toggleMobileMenu}>
             About Strategic
           </Link>
         </li>
         <li>
-          <Link
-            to="/contact"
-            onClick={toggleMobileMenu}
-            style={{ color: textColor }}
-          >
+          <Link to="/contact" onClick={toggleMobileMenu}>
             Contact Us
           </Link>
         </li>
       </ul>
-      <button
-        className="cta-button-mobile"
-        style={{
-          backgroundColor: buttonBgColor,
-          color: buttonTextColor,
-        }}
-        onClick={toggleMobileMenu}
-      >
+      <button className="cta-button-mobile" onClick={toggleMobileMenu}>
         Get A Free Strategy Session
       </button>
     </motion.div>
