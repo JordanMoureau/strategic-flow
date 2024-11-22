@@ -20,10 +20,16 @@ export default function Home() {
             the US Military to make your business systems stronger, more
             efficient and easier to maintain.
           </p>
-
-          <button>
-            <span>Lets Talk</span>
-          </button>
+          <a
+            href="https://calendly.com/jwallace-strategicflow"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <button>
+              <span>Lets Talk</span>
+            </button>
+          </a>
         </div>
       </div>
 

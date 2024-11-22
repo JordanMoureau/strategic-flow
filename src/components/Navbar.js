@@ -50,16 +50,22 @@ function Navbar({
           </Link>
         </li>
       </ul>
-      <button
-        className="cta-button-navbar"
-        style={{
-          backgroundColor: buttonBgColor,
-          color: buttonTextColor,
-        }}
-        onClick={toggleMobileMenu}
+      <a
+        href="https://calendly.com/jwallace-strategicflow"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none" }}
       >
-        Get A Free Strategy Session
-      </button>
+        <button
+          className="cta-button-navbar"
+          style={{
+            backgroundColor: buttonBgColor,
+            color: buttonTextColor,
+          }}
+        >
+          Get A Free Strategy Session
+        </button>
+      </a>
 
       <MobileNav
         isOpen={isMobileMenuOpen}
