@@ -34,6 +34,11 @@ h1 {
   margin-bottom: 8rem;
 }
 
+.contact-form h3 {
+  font-size: 2rem;
+  font-family: "RalewayBold";
+}
+
 input {
   color: #b3b5b0;
   font-size: 1rem;

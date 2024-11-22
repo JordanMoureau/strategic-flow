@@ -31,6 +31,12 @@
   margin-bottom: 8rem;
 }
 
+.align {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
 .contact-form-cta button {
   font-size: 1.5rem;
   background: #c4061b;
