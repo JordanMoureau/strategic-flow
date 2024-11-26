@@ -66,12 +66,17 @@ export default function About() {
           </div>
 
           <div className="about-bottom">
-            <h2>
-              "In my career and life, I've discovered that teamwork is the most
-              rewarding pursuit, both professionally and personally. My mission
-              is to share that pursuit with as many people as possible
-              throughout my lifetime."
-            </h2>
+            <div className="bottom-container">
+              <h2>
+                "I’ve had the privilege of working with some of the highest
+                performing teams in the world. What I’ve seen across every arena
+                is that true leadership is what drives success, no matter the
+                mission or industry. But today, we’re facing a crisis of
+                leadership. My mission is to help change that, one team at a
+                time.”
+              </h2>
+              <p>-Joe "Cowboy" Wallace</p>
+            </div>
           </div>
         </div>
       </div>

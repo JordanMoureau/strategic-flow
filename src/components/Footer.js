@@ -17,7 +17,7 @@ export default function Footer() {
 
         <div className="details-column">
           <h3>Get Your Teams in Flow</h3>
-          <h4>info@strategicflow.com</h4>
+          <h4>info@strategicflow.org</h4>
           <p>Connect with us on social to see what we're up to</p>
           <div className="social-icons">
             <a

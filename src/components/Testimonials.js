@@ -5,11 +5,13 @@ export default function Testimonials() {
     <div className="testimonials">
       <div className="quote">
         <h3>
-          "It blew my mind how much progress Joe was able to make in just 24hrs.
-          I’d been working at it with no success for YEARS! I don’t know how we
-          functioned without him. 100% worth the cost. A thousand times over."
+          "Cowboy was exactly what we needed as we started breaking into new
+          markets. He helped us cut through the noise, and focus on what
+          mattered. His practical advice and steady guidance gave us the
+          confidence to move forward. If you’re a small business looking to
+          level up, Cowboy’s the guy to call."
         </h3>
-        <p>-Happy Client #1</p>
+        <p>- Martin Zihlo, SORUDO, Project Manager</p>
       </div>
     </div>
   );

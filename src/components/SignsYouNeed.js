@@ -1,5 +1,6 @@
 import React from "react";
 import "./signsyouneed.css";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -31,7 +32,11 @@ export default function SignsYouNeed() {
           <div className="card" key={index}>
             <h3>{card.title}</h3>
             <p>{card.description}</p>
-            <button>{card.buttonText}</button>
+            <button>
+              <Link to="/contact" className="cta-button">
+                {card.buttonText}
+              </Link>
+            </button>
           </div>
         ))}
       </div>

@@ -21,6 +21,7 @@
 }
 
 .quote p {
+  margin-top: 15px;
   font-family: "Raleway";
   font-weight: 100;
 }
