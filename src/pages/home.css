@@ -17,6 +17,7 @@
 }
 
 .hero-heading h1 {
+  font-family: "AlienEncountersBold";
   width: 70%;
   text-align: center;
   max-width: 900px;
@@ -33,6 +34,7 @@
 }
 
 .hero-heading button {
+  color: black;
   margin-top: 3rem;
   padding: 10px 50px;
   text-transform: uppercase;

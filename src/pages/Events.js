@@ -13,7 +13,14 @@ export default function Events() {
       <div className="events-page">
         <Navbar textColor="#fff" buttonBgColor="#fff" buttonTextColor="#333" />
         <div className="bounder">
-          <video className="background-video" autoPlay muted loop>
+          <video
+            className="background-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+          >
             <source src={require("../media/eventsvid.mp4")} type="video/mp4" />
           </video>
           <div className="content-overlay">
