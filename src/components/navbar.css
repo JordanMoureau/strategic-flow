@@ -135,3 +135,12 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 450px) {
+  .mobile-menu-icon {
+    right: 0.6rem;
+  }
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+}
