@@ -65,3 +65,7 @@ a {
   color: inherit; /* Use current text color */
   cursor: pointer; /* Ensure links look clickable */
 }
+
+button {
+  color: inherit;
+}
