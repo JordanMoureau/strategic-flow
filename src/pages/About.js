@@ -1,11 +1,20 @@
 import "./about.css";
 import Navbar from "../components/Navbar";
 
+import HelmetWrapper from "../components/Helmet";
+
 import joe from "../media/wiseguy.jpg";
 
 export default function About() {
   return (
     <div>
+      <HelmetWrapper
+        title="Strategic Flow | Leadership That Speaks"
+        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
+        keywords="Leadership, Scaling, Business Strategy, Team Building"
+        image="https://strategicflow.org/home-hero-image.jpg"
+        url="https://strategicflow.org"
+      />
       <div class="about-us">
         <Navbar
           textColor="#000" // White text on black background

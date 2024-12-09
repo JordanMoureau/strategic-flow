@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
+import HelmetWrapper from "../components/Helmet";
+
 import "./contact.css";
 import Navbar from "../components/Navbar";
 
@@ -41,6 +43,13 @@ export default function Contact() {
 
   return (
     <div>
+      <HelmetWrapper
+        title="Strategic Flow | Leadership That Speaks"
+        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
+        keywords="Leadership, Scaling, Business Strategy, Team Building"
+        image="https://strategicflow.org/home-hero-image.jpg"
+        url="https://strategicflow.org"
+      />
       <Navbar
         textColor="#000"
         buttonBgColor="#C4061B"

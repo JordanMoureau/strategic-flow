@@ -6,10 +6,18 @@ import EventHighlights from "../components/EventHighlights";
 
 import Testimonials from "../components/Testimonials";
 import CtaContact from "../components/CtaContact";
+import HelmetWrapper from "../components/Helmet";
 
 export default function Events() {
   return (
     <>
+      <HelmetWrapper
+        title="Strategic Flow | Leadership That Speaks"
+        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
+        keywords="Leadership, Scaling, Business Strategy, Team Building"
+        image="https://strategicflow.org/home-hero-image.jpg"
+        url="https://strategicflow.org"
+      />
       <div className="events-page">
         <Navbar textColor="#fff" buttonBgColor="#fff" buttonTextColor="#333" />
         <div className="bounder">

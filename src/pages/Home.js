@@ -6,11 +6,20 @@ import CtaContact from "../components/CtaContact";
 import HeroCallToAction from "../components/HeroCallToAction.js";
 import SignsYouNeed from "../components/SignsYouNeed.js";
 
+import HelmetWrapper from "../components/Helmet.js";
+
 import joe from "../media/wiseguy.jpg";
 
 export default function Home() {
   return (
     <div>
+      <HelmetWrapper
+        title="Strategic Flow | Leadership That Speaks"
+        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
+        keywords="Leadership, Scaling, Business Strategy, Team Building"
+        image="https://strategicflow.org/home-hero-image.jpg"
+        url="https://strategicflow.org"
+      />
       <div className="hero">
         <Navbar textColor="#fff" buttonBgColor="#fff" buttonTextColor="#333" />
         <div className="hero-heading">
@@ -25,6 +34,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
+            aria-label="Schedule a leadership strategy session with Joe Wallace"
           >
             <button>
               <span>Lets Talk</span>
@@ -60,7 +70,11 @@ export default function Home() {
         </div>
         <Testimonials />
         <div className="about-cowboy">
-          <img src={joe} alt="concierge military style consulting services" />
+          <img
+            src={joe}
+            alt="Joe Wallace offering military-style leadership consulting services"
+            loading="lazy"
+          />
           <div className="right-side">
             <h2>The Cowboy</h2>
             <p>
