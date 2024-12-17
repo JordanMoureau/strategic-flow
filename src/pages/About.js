@@ -9,12 +9,32 @@ export default function About() {
   return (
     <div>
       <HelmetWrapper
-        title="Strategic Flow | Leadership That Speaks"
-        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
-        keywords="Leadership, Scaling, Business Strategy, Team Building"
-        image="https://strategicflow.org/home-hero-image.jpg"
-        url="https://strategicflow.org"
-      />
+        title="Strategic Flow | About Joe Wallace"
+        description="Discover Joe Wallace's journey from Force Recon Marine to trusted leadership coach. Learn how his battle-tested strategies are helping businesses scale and thrive."
+        keywords="Joe Wallace, Leadership Coach, Force Recon Marine, Business Strategy, Leadership Consulting"
+        image="https://strategicflow.org/about-hero-image.jpg"
+        url="https://strategicflow.org/about"
+      >
+        {" "}
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Joe Wallace",
+          "jobTitle": "Leadership Coach & Business Strategist",
+          "description": "Joe Wallace is a former Force Recon Marine turned leadership coach, offering military-based strategies to scale businesses and empower teams.",
+          "url": "https://strategicflow.org/about",
+          "sameAs": [
+            "https://www.linkedin.com/in/joewallace",
+            "https://strategicflow.org"
+          ],
+          "image": "https://strategicflow.org/about-hero-image.jpg"
+        }
+      `}
+        </script>
+      </HelmetWrapper>
+
       <div class="about-us">
         <Navbar
           textColor="#000" // White text on black background
@@ -23,6 +43,9 @@ export default function About() {
         />
         <div className="bounder">
           <div className="about-head">
+            <h1 className="visually-hidden">
+              About Joe Wallace | Strategic Flow
+            </h1>
             <h1>Our Mission</h1>
             <p>
               We bring proven strategies and resilience-building techniques
@@ -34,20 +57,28 @@ export default function About() {
           </div>
 
           <div className="about-cowboy">
-            <img src={joe} alt="concierge military style consulting services" />
+            <img
+              src={joe}
+              alt="Joe Wallace, Force Recon Marine turned leadership and business coach"
+            />
+
             <div className="right-side">
               <h2>The Cowboy</h2>
               <p>
-                Joe “Cowboy” Wallace earned his call sign while serving as a
-                Force Reconnaissance Marine, deploying to Afghanistan, Mexico,
-                Colombia, and Southeast Asia during nearly a decade in the
-                Marine Corps. After his military service, Cowboy embarked on a
-                successful career in business, founding a tourism cooperative in
-                Southern California and later serving as a team leader, sniper,
-                and training coordinator on a regional SWAT team. His public
-                service included working undercover on a task force to combat
-                drug and human trafficking, rescuing countless victims and
-                dismantling criminal organizations.
+                Joe “Cowboy” Wallace combines his leadership coaching skills
+                with decades of experience in elite units like the Force Recon
+                Marines. At Strategic Flow Consulting, Joe applies his expertise
+                in business strategy to help teams overcome challenges,
+                strengthen leadership, and implement scalable systems.
+                <br />
+                <br />
+                Joe earned his call sign while serving as a Force Reconnaissance
+                Marine, deploying to Afghanistan, Mexico, Colombia, and
+                Southeast Asia during nearly a decade in the Marine Corps. After
+                his military service, Cowboy embarked on a successful career in
+                business, founding a tourism cooperative in Southern California
+                and later serving as a team leader, sniper, and training
+                coordinator on a regional SWAT team.
               </p>
             </div>
             <div className="bottom">

@@ -44,12 +44,13 @@ export default function Contact() {
   return (
     <div>
       <HelmetWrapper
-        title="Strategic Flow | Leadership That Speaks"
-        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
-        keywords="Leadership, Scaling, Business Strategy, Team Building"
-        image="https://strategicflow.org/home-hero-image.jpg"
-        url="https://strategicflow.org"
+        title="Strategic Flow | Get in Touch"
+        description="Contact Strategic Flow to schedule your free leadership strategy session. Empower your team, reduce burnout, and scale your business with proven systems."
+        keywords="Contact Strategic Flow, Leadership Strategy Session, Business Consultation, Joe Wallace"
+        image="https://strategicflow.org/contact-hero-image.jpg"
+        url="https://strategicflow.org/contact"
       />
+
       <Navbar
         textColor="#000"
         buttonBgColor="#C4061B"

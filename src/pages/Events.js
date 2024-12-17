@@ -12,12 +12,48 @@ export default function Events() {
   return (
     <>
       <HelmetWrapper
-        title="Strategic Flow | Leadership That Speaks"
-        description="Empowering small teams with proven military leadership strategies to scale businesses, improve team dynamics, and reduce executive burnout."
-        keywords="Leadership, Scaling, Business Strategy, Team Building"
-        image="https://strategicflow.org/home-hero-image.jpg"
-        url="https://strategicflow.org"
-      />
+        title="Strategic Flow | Leadership Workshops & Events"
+        description="Join our leadership workshops and events to learn proven military strategies that empower teams, improve collaboration, and help businesses scale efficiently."
+        keywords="Leadership Events, Workshops, Team Training, Business Leadership, Scaling Teams"
+        image="https://strategicflow.org/events-hero-image.jpg"
+        url="https://strategicflow.org/events"
+      >
+        {" "}
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "Leadership Workshops & Team-Building Events",
+          "startDate": "2024-01-15T09:00:00-08:00", /* Replace with actual date */
+          "endDate": "2024-01-15T17:00:00-08:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Strategic Flow Venue",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Leadership Way",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "postalCode": "90001",
+              "addressCountry": "US"
+            }
+          },
+          "description": "Join our leadership workshops to build stronger teams, improve communication, and develop trust. Empower your team with proven military strategies.",
+          "image": [
+            "https://strategicflow.org/events-hero-image.jpg"
+          ],
+          "organizer": {
+            "@type": "Organization",
+            "name": "Strategic Flow",
+            "url": "https://strategicflow.org"
+          }
+        }
+      `}
+        </script>{" "}
+      </HelmetWrapper>
+
       <div className="events-page">
         <Navbar textColor="#fff" buttonBgColor="#fff" buttonTextColor="#333" />
         <div className="bounder">
@@ -32,6 +68,10 @@ export default function Events() {
             <source src={require("../media/eventsvid.mp4")} type="video/mp4" />
           </video>
           <div className="content-overlay">
+            <h1 className="visually-hidden">
+              Leadership Workshops & Team Building Events | Strategic Flow
+            </h1>{" "}
+            {/* Hidden header */}
             <h1>Team Building Like no Other</h1>
             <p>
               Strengthen communication, problem-solving skills, and camaraderie

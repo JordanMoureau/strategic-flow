@@ -19,7 +19,26 @@ export default function Home() {
         keywords="Leadership, Scaling, Business Strategy, Team Building"
         image="https://strategicflow.org/home-hero-image.jpg"
         url="https://strategicflow.org"
-      />
+      >
+        {" "}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Strategic Flow",
+        "url": "https://strategicflow.org",
+        "logo": "https://strategicflow.org/logo.png",
+        "description": "Proven military leadership strategies tailored for small teams to improve systems, team dynamics, and scalability.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-206-715-7980",
+          "contactType": "Customer Service"
+        }
+      }
+      `}
+        </script>{" "}
+      </HelmetWrapper>
       <div className="hero">
         <Navbar textColor="#fff" buttonBgColor="#fff" buttonTextColor="#333" />
         <div className="hero-heading">
@@ -68,6 +87,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <h2 className="visually-hidden">What Leaders Are Saying</h2>
         <Testimonials />
         <div className="about-cowboy">
           <img
@@ -80,9 +101,9 @@ export default function Home() {
             <p>
               Joe “Cowboy” Wallace earned his call sign while serving as a Force
               Reconnaissance Marine, deploying to Afghanistan, Mexico, Colombia,
-              and Southeast Asia during nearly a decade in the Marine Corps.
-              After his military service, Cowboy embarked on a successful career
-              in business, founding a tourism cooperative in Southern California
+              and Southeast Asia for nearly a decade in the Marine Corps. After
+              his military service, Cowboy embarked on a successful career in
+              business, founding a tourism cooperative in Southern California
               and later serving as a team leader, sniper, and training
               coordinator on a regional SWAT team. His public service included
               working undercover on a task force to combat drug and human
@@ -91,6 +112,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <h2 className="visually-hidden">Signs You Need Strategic Flow</h2>
         <SignsYouNeed />
         <CtaContact />
         <HeroCallToAction />
