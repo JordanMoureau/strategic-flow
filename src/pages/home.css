@@ -75,7 +75,7 @@
 
 @media (max-width: 1200px) {
   .hero-heading h1 {
-    width: 95%;
+    width: 85%;
   }
   .hero-heading p {
     width: 60%;
@@ -105,5 +105,13 @@
 @media (max-width: 480px) {
   .hero-heading {
     padding: 4rem 0px;
+  }
+
+  .hero-heading h1 {
+    text-align: left;
+  }
+
+  .hero-heading p {
+    text-align: left;
   }
 }

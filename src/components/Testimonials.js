@@ -38,7 +38,7 @@ export default function Testimonials() {
   useEffect(() => {
     const timer = setInterval(() => {
       nextTestimonial();
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(timer); // Clear the interval on component unmount
   }, []);
@@ -55,7 +55,7 @@ export default function Testimonials() {
           initial={{ opacity: 0 }} // Start invisible
           animate={{ opacity: 1 }} // Fade in
           exit={{ opacity: 0 }} // Fade out
-          transition={{ duration: 1.2 }} // Smooth fade-in duration
+          transition={{ duration: 3 }} // Smooth fade-in duration
         >
           <div className="quote">
             <h3>"{testimonials[currentIndex].quote}"</h3>
